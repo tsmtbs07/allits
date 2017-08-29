@@ -1,0 +1,318 @@
+{% extends "Home/header.html" %}
+{% block body %}
+{% load staticfiles %}
+	
+	<!-- Responsive slider - START -->
+	<div class="slider">
+	<div class="container">
+		<div class="row">
+			<div class="responsive-slider" data-spy="responsive-slider" data-autoplay="true">
+				<div class="slides" data-group="slides">
+					<ul>
+						<li>
+							<div class="slide-body" data-group="slide">
+								<img src="{% static 'test_1/img/networking.jpg' %}" alt="">
+								<div class="caption header" data-animate="slideAppearUpToDown" data-delay="500" data-length="300">
+									<button class="btn btn-primary"><h2> We can do IT all</h2></button>
+									<div class="caption-sub" data-animate="slideAppearDownToUp" data-delay="1200" data-length="300"><button class="btn btn-primary"><h4><span>Custom solutions for your home or small business</span></h4></button></div>
+									<div class="caption-sub" data-animate="slideAppearLeftToRight" data-delay="900" data-length="300"><button class="btn btn-primary"><h3>Affordable IT for any situation</h3></button></div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="slide-body" data-group="slide">
+								<img src="{% static 'test_1/img/Raspberry_Pi.png' %}" alt="">
+								<div class="caption header" data-animate="slideAppearDownToUp" data-delay="500" data-length="300">
+									<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"><h2>Automation</h2></button>
+									<div class="caption-sub" data-animate="slideAppearUpToDown" data-delay="800" data-length="300"><button class="btn btn-primary"><h4><span>It's now affordable with mini computers </span></h4></button></div>
+									<div class="caption-sub" data-animate="slideAppearRightToLeft" data-delay="1200" data-length="300"><button class="btn btn-primary"><h3>Unlimited possibilities</h3></button></div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="slide-body" data-group="slide">
+								<img src="{% static 'test_1/img/Custom_PC.jpg' %}" alt="">
+								<div class="caption header" data-animate="slideAppearUpToDown" data-delay="500" data-length="300">
+								  <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"><h2>Business server or gaming PC</h2></button>
+								  <div class="caption-sub" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300"><button class="btn btn-primary"><h4>We can build a machine for all of your needs</h4></button></div>
+								  <div class="caption-sub" data-animate="slideAppearDownToUp" data-delay="1200" data-length="300"><button class="btn btn-primary"><h3><span>There's an option for every budget</span></h3></button></div>
+						
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="slide-body" data-group="slide">
+								<img src="{% static 'test_1/img/Python.png' %}" alt="">
+								<div class="caption header" data-animate="slideAppearUpToDown" data-delay="500" data-length="300">
+								  <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"><h2>Websites or programs</h2></button>
+								  <div class="caption-sub" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300"><button class="btn btn-primary"><h4>We can custom build your software solution</h4></button></div>
+								  <div class="caption-sub" data-animate="slideAppearDownToUp" data-delay="1200" data-length="300"><button class="btn btn-primary"><h3><span>Affordable solutions for a home or small business</span></h3></button></div>
+						
+								</div>
+							</div>
+						</li>				
+					</ul>
+				</div>
+		   
+				<a class="slider-control left" href="#" data-jump="prev"><i class="fa fa-angle-left fa-2x"></i></a>
+				<a class="slider-control right" href="#" data-jump="next"><i class="fa fa-angle-right fa-2x"></i></a>		
+			</div>
+		</div>
+	</div>
+	</div>
+    <!-- Responsive slider - END -->
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="contents">
+					<h2>Our goal is to make IT easier and more affordable</h2>
+					<p>We want to bring IT to homes and small businesses to make their lives better</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	
+	<div class="container">
+		<div class="row">
+			<div class="recent">
+				<button class="btn-primarys"><h3>Our solutions</h3></button>
+				<hr>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="content">
+				<div class="col-md-4">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
+						<div class="align-center">
+							<h4>Computer Services</h4>					
+							<div class="icon">
+								<i class="fa fa-desktop fa-3x"></i>
+							</div>
+							<p>
+							 Computer repair, custom builds, or upgrades.  We do it all and can meet any budget!
+							</p>
+							<div class="ficon">
+								<a href="{% url 'start_solutions' %}" alt="">Learn more</a> <i class="fa fa-long-arrow-right"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.8s">
+						<div class="align-center">
+							<h4>Network Services</h4>					
+							<div class="icon">
+								<i class="fa fa-cloud fa-3x"></i>
+
+							</div>
+							<p>
+							 Networking is the core of all IT.  Speed problems?  We offer fast and secure network solutions.    
+							</p>
+							<div class="ficon">
+								<a href="{% url 'start_solutions' %}" alt="">Learn more</a> <i class="fa fa-long-arrow-right"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="1.2s">
+						<div class="align-center">
+							<h4>Other Services</h4>					
+							<div class="icon">
+								<i class="fa fa-location-arrow fa-3x"></i>
+
+							</div>
+							<p>
+							 IT is vast.  If it's tech then we can probably help.  We are ready for any challenge!
+							</p>
+							<div class="ficon">
+								<a href="{% url 'start_solutions' %}" alt="">Learn more</a> <i class="fa fa-long-arrow-right"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="container">
+		<div class="row">
+			<div class="box">
+				
+				<div class="col-md-6">
+					<div class="wow bounceIn" data-wow-offset="0" data-wow-delay="0.8s">
+						<div class="align-center">
+							<h4>Quick Support</h4>					
+							<div class="icon">
+								<i class="fa fa-heart-o fa-3x"></i>
+
+							</div>
+							<p>
+							 We will strive to respond fast and be curteous of your time.
+							</p>
+							<div class="ficon">
+								<a href="{% url 'start_solutions' %}" alt="">Learn more</a> <i class="fa fa-long-arrow-right"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="wow bounceIn" data-wow-offset="0" data-wow-delay="1.3s">
+						<div class="align-center">
+							<h4>Contact us</h4>					
+							<div class="icon">
+								<i class="fa fa-laptop fa-3x"></i>
+
+							</div>
+							<p>
+							 We can't wait to see what challenges you have for us!
+							</p>
+							<div class="ficon">
+								<a href="{% url 'start_contact' %}" alt="">Learn more</a> <i class="fa fa-long-arrow-right"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!--about
+	
+		<div class="container">
+			<div class="about">			
+					<div class="row">
+						<div class="recent">
+							<button class="btn-primarys"><h3>About us</h3></button>
+							<hr>
+						</div>
+					</div>				
+				<div class="row">			
+					<div class="row-slider">
+						<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.2s">
+							<div class="col-lg-6 mar-bot30">
+								<div class="responsive-slider" data-spy="responsive-slider" data-autoplay="true">
+									<div class="slides" data-group="slides">
+										<ul> 	    		
+											<div class="slide-bodys" data-group="slide">
+												<li><img alt="" class="img-responsive" src="{% static 'test_1/img/3.jpg' %}" width="100%" height="450"/></li>
+												<li><img alt="" class="img-responsive" src="{% static 'test_1/img/4.jpg' %}" width="100%" height="450"/></li>
+												<li><img alt="" class="img-responsive" src="{% static 'test_1/img/5.jpg' %}" width="100%" height="450"/></li>
+											</div>
+										</ul>
+											
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+								<div class="thumnails">
+									<h4>Voluptatem accusantium doloremque</h4>													
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+									sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
+									magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+									quis nostrud exerci tation ullamcorper suscipit 
+									lobortis nisl ut aliquip ex ea commodo consequat.</p>								
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+									sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
+									magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+									quis nostrud exerci tation ullamcorper suscipit 
+									lobortis nisl ut aliquip ex ea commodo consequat.</p>
+									
+									<div class="ficon">
+										<a href="" alt="">Learn more</a> <i class="fa fa-long-arrow-right"></i>
+									</div>
+								</div>
+							</div>
+						</div>					
+					</div>	
+				</div>					
+			</div>			
+		</div>
+	
+	<!--/about-->
+	
+	<!--Our Team
+	
+	<div class="container">
+		<div class="row">
+			<div class="recent">
+				<button class="btn-primarys"><h3>Our Team</h3></button>
+				<hr>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="content">
+				<div class="col-md-4">
+					<div class="wow fadeInUp" data-wow-delay="0.2s">
+						<div class="align-center">
+							<h4>Alexandra</h4>	
+							<div class="icon">
+								<i class="fa fa-tasks fa-3x"></i>
+							</div>
+							<img src="{% static 'test_1/img/team/3.jpg' %}" alt="" class="img-responsive">
+							<p>
+							 Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
+							</p>
+							<div class="ficon">
+								<a href="" alt="">Learn more</a><i class="fa fa-long-arrow-right"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="wow fadeInUp" data-wow-delay="0.4s">
+						<div class="align-center">
+							<h4>John Doe</h4>					
+							<div class="icon">
+								<i class="fa fa-files-o fa-3x"></i>
+							</div>
+							<img src="{% static 'test_1/img/13.jpg' %}" alt="" class="img-responsive">
+							<p>
+							 Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
+							</p>
+							<div class="ficon">
+								<a href="" alt="">Learn more</a> <i class="fa fa-long-arrow-right"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="wow fadeInUp" data-wow-delay="0.6s">
+						<div class="align-center">
+							<h4>Kelly Hidayah</h4>					
+							<div class="icon">
+								<i class="fa fa-location-arrow fa-3x"></i>
+							</div>
+							<img src="{% static 'test_1/img/team/members3.jpg' %}" alt="" class="img-responsive">
+							<p>
+							 Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
+							</p>
+							<div class="ficon">
+								<a href="" alt="">Learn more</a> <i class="fa fa-long-arrow-right"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<hr>
+		</div>
+	</div>-->
+{% endblock %}

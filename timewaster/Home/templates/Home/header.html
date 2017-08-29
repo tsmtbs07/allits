@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+{% load staticfiles %}
+	<meta charset="utf-8">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<title>Timewaster</title>
+	<link rel="stylesheet" href="{% static 'raleway/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'raleway/css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'raleway/css/simple-line-icons.css' %}">
+	<link rel="stylesheet" href="{% static 'raleway/css/animate.css' %}">
+	<link rel="stylesheet" href="{% static 'raleway/css/templatemo_style.css' %}">
+</head>
+<body>
+	<header class="site-header container animated fadeInDown">
+		<div class="header-wrapper">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="site-branding">
+						<a href="/"><h1>ALLITS</h1></a>
+					</div>
+				</div>
+				<a href="#" class="toggle-nav hidden-md hidden-lg">
+					<i class="fa fa-bars"></i>
+				</a>
+				<div class="col-md-8">
+					<nav id="nav" class="main-navigation hidden-xs hidden-sm">
+						<ul class="main-menu">
+							<li><a href="{% url 'home' %}">Home</a></li>
+							<li><a href="{% url 'start_randomstuff' %}">Random Stuff</a></li>
+							<!--li><a class="show-3 projectbutton" href="#">Projects</a></li>
+							<li><a class="show-4 blogbutton" href="#">Blog Entries</a></li>
+							<li><a class="show-5 contactbutton" href="#">Contact</a></li>-->
+						</ul>
+					</nav>
+					<nav class="main-navigation menu-responsive hidden-md hidden-lg">
+						<ul class="main-menu">
+							<li><a href="{% url 'home' %}">Home</a></li>
+							<li><a href="{% url 'start_randomstuff' %}">Random Stuff</a></li>
+							<!--li><a class="show-3 projectbutton" href="#">Projects</a></li>
+							<li><a class="show-4 blogbutton" href="#">Blog Entries</a></li>
+							<li><a class="show-5 contactbutton" href="#">Contact</a></li>-->
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+{% block body %}{% endblock %}
+
+</body>
+</html>

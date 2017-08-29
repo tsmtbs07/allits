@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+
+	{% load staticfiles %}
+	<title>Time Waster</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+	<link href="{% static 'black_white/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'black_white/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'black_white/css/templatemo_style.css' %}" rel="stylesheet" type="text/css">	
+</head>
+<body>
+	<div class="templatemo-logo visible-xs-block">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 black-bg logo-left-container">
+			<h1 class="logo-left">Time</h1>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 white-bg logo-right-container">
+			<h1 class="logo-right">Waster</h1>
+		</div>			
+	</div>
+	<div class="templatemo-container">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 black-bg left-container">
+			<h1 class="logo-left hidden-xs margin-bottom-60">Time</h1>			
+			<div class="tm-left-inner-container">
+				<ul class="nav nav-stacked templatemo-nav">
+				  <li><a href="index.html" class="active">Homepage</a></li>
+				  <li><a href="/random-movies/">Random Movies</a></li>
+				  <!--<li><a href="services.html"><i class="fa fa-send-o fa-medium"></i>Services</a></li>
+				  <li><a href="testimonials.html"><i class="fa fa-comments-o fa-medium"></i>Testimonials</a></li>
+				  <li><a href="about.html"><i class="fa fa-gears fa-medium"></i>About Us</a></li>
+				  <li><a href="contact.html"><i class="fa fa-envelope-o fa-medium"></i>Contact</a></li>-->
+				</ul>
+			</div>
+		</div> <!-- left section -->
+	
+	{% block body %}{% endblock %}
+  </body>
+</html>
+	
